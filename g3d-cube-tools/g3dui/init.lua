@@ -1,7 +1,7 @@
 -- g3dui: UI + unified input + 3D picking for LÖVE / g3d
 -- MIT license. See README.md.
 --
---   local ui = require("g3dui")
+--   local ui = require "g3d-cube-tools.g3dui"
 --   ui.setup{ camera = g3d.camera }      -- optional
 --   ui.hook()                            -- call inside love.load
 --   function love.update(dt) ui.update(dt) end

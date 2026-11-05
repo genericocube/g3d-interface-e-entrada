@@ -7,7 +7,7 @@
 -- Run with:  love .
 
 local g3d = require("g3d")
-local ui = require("g3dui")
+local ui = require "g3d-cube-tools.g3dui"
 
 local isMobile = (love.system.getOS() == "Android" or love.system.getOS() == "iOS")
 
