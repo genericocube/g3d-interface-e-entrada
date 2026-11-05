@@ -14,12 +14,13 @@ Try the demo: install [LÖVE](https://love2d.org) and run `love .` in this folde
 
 ## Install
 
-Copy the `g3dui/` folder into your project (next to `g3d/`):
+Copy the `g3d-cube-tools/` folder (it holds `g3dui/`) into your project, next to `g3d/`:
 
 ```
 your-game/
 ├── g3d/
-├── g3dui/
+├── g3d-cube-tools/
+│   └── g3dui/
 └── main.lua
 ```
 
@@ -27,7 +28,7 @@ your-game/
 
 ```lua
 local g3d = require("g3d")
-local ui  = require("g3dui")
+local ui  = require "g3d-cube-tools.g3dui"
 
 function love.load()
     ui.setup{ camera = g3d.camera }   -- camera is only needed for 3D picking
@@ -197,12 +198,13 @@ Para testar a demo: instale o [LÖVE](https://love2d.org) e rode `love .` nesta 
 
 ## Instalação
 
-Copie a pasta `g3dui/` para o seu projeto (junto da pasta `g3d/`):
+Copie a pasta `g3d-cube-tools/` (ela contém o `g3dui/`) para o seu projeto, junto da pasta `g3d/`:
 
 ```
 seu-jogo/
 ├── g3d/
-├── g3dui/
+├── g3d-cube-tools/
+│   └── g3dui/
 └── main.lua
 ```
 
@@ -210,7 +212,7 @@ seu-jogo/
 
 ```lua
 local g3d = require("g3d")
-local ui  = require("g3dui")
+local ui  = require "g3d-cube-tools.g3dui"
 
 function love.load()
     ui.setup{ camera = g3d.camera }   -- a câmera só é necessária para clicar em 3D
